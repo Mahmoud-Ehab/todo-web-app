@@ -1,0 +1,39 @@
+.taskRow{
+    transition: 0.15s;
+}
+
+html{
+    font-size: 1.2vw;
+}
+
+#left_div {
+    width: 65%;
+}
+
+#right_div {
+    width: 35%;
+    background-color: #f1f1f1;
+}
+
+#rmvBtn {
+    width: 1.5vw;
+    cursor: pointer;
+}
+
+@media screen and (orientation: portrait) { 
+    html{
+        font-size: 3vw;
+    }
+
+    #left_div {
+        width: 100%;
+    }
+    
+    #right_div {
+        width: 100%;
+    }
+
+    #rmvBtn {
+        width: 3vw;
+    }
+ }
