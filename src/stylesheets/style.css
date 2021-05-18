@@ -27,10 +27,17 @@ html{
 
     #left_div {
         width: 100%;
+        height: 60vh;
+    }
+
+    #tasksDiv{
+        height: 80%;
+        overflow-y: scroll;
     }
     
     #right_div {
         width: 100%;
+        height: auto;
     }
 
     #rmvBtn {

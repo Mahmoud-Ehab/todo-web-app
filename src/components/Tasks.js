@@ -15,7 +15,7 @@ const Tasks = (props) => {
 
     // return jsx statement
     return (
-        <div style={{ padding: 10 }}>
+        <div id='tasksDiv' style={{ padding: 10 }}>
             {
                 props.tasks.map(
                     (task) => 
