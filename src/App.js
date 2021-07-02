@@ -16,6 +16,7 @@ function App() {
   );
   let [selectedTask, setSelectedTask] = useState(null);
 
+  // Save tasks in localStorage
   useEffect(() => {
     localStorage.setItem('TodoApp_Tasks', JSON.stringify(tasks));
   }, [tasks]);
@@ -74,7 +75,7 @@ function App() {
 
   // JSX return statement
   return (
-    <Container className='d-flex flex-row animate__animated animate__bounceInDown' style={{height: '100vh'}}>
+    <Container className='d-flex flex-column animate__animated animate__bounceInDown' style={{height: '100vh'}}>
       <div className='d-flex flex-row flex-wrap m-auto shadow' style={{width: '100%'}}  >
         <div id='left_div'>
           <ToDoHeader />
@@ -86,6 +87,8 @@ function App() {
             <NewTaskForm submitHandler={addTask} taskId={ generateId(Math.floor(Math.random() * 100)) } />
         </div>
       </div>
+
+      <a style={{margin: '30px auto'}} href="./ToDo.apk"><img src={'DownloadForAndroid.png'}/></a>
     </Container>
   );
 }
