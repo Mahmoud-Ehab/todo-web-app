@@ -88,7 +88,9 @@ function App() {
         </div>
       </div>
 
-      <a style={{margin: '30px auto'}} href="./ToDo.apk"><img src={'DownloadForAndroid.png'}/></a>
+      <a href="https://drive.google.com/file/d/1ccfmW00oaafqZRq2mo5TMvQgawGLcl6s/view?usp=sharing" style={{margin: '25px auto 0 auto'}}>
+        <img src={'DownloadForAndroid.png'} width='150'/>
+      </a>
     </Container>
   );
 }
